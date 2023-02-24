@@ -1,0 +1,35 @@
+* { /* aqui está sendo estilizado tudo que não tem uma estilização personalizada */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Faz com que a largura inclua a borda e o espaçamento */
+}
+
+header { /* Estilização do cabeçalho */
+    padding: 16px 0; /* Define do espaçamento interno */
+    background-color: #182C61; /* Altera a cor do fundo */
+    color: #ECF0F1; /* Altera a cor do elemento */
+}
+
+header nav li {
+    display: inline; /* Apresenta os elementos em linha lado a lado */
+    margin-left: 16px; /* Adiciona uma margem a esquerda */
+    color: #ECF0F1;
+    font-size: 24px; /* Altera o tamanho da fonte */
+}
+
+header nav li a { /* Altera a cor do texto que está linkado */
+    color: #ECF0F1;
+    text-decoration: none; /* Remove o underline dos links */ 
+}
+
+.container {
+    max-width: 1280px; /* Seta a largura máxima da página */
+    width: 100%; /* Ocupará 100% da largura definida acima */
+    margin: 0 auto; /* Seta a margem */
+}
+
+header .container {
+    display: flex; /* Coloca o menu ao lado do título */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: space-between; /* Distribui os itens */
+}
