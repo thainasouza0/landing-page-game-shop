@@ -4,17 +4,17 @@
     box-sizing: border-box; /* Faz com que a largura inclua a borda e o espaçamento */
 }
 
-header,
-section h2 {
+header, h1,
+section h2,
+section h3,
+form button {
     font-family: 'Bungee', cursive; /* Seta a fonte escolhida*/
-}
-
-header h1, 
-section h2 {
     font-weight: normal; /* Corrige o peso bold auto inserido pelo navegador */
 }
 
-body {    
+body,
+input,
+textarea {    
     font-family: 'Roboto', sans-serif;
 }
 
@@ -53,7 +53,8 @@ section .container {
     height: 24px; /* Define o tamanho das imagens */
 }
 
-.brands-list li {
+.brands-list li,
+.social-links li {
     display: inline;
     margin-right: 8px;
 }
@@ -77,4 +78,60 @@ section p {
 
 .store-front {
     margin-right: 32px;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input, 
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: #182C61;
+    color: #ECF0F1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #344c8f;
+}
+
+input:focus, textarea:focus {
+    outline-color: #182C61;
+}
+
+footer {
+    background-color: #182C61;
+    color:#ECF0F1;
+    padding: 16px 0;
 }
